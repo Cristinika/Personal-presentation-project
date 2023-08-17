@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    zoom: 120%;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+  }
+  
+  .navbar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Add spacing between buttons */
+  .navbar button:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  button {
+    background-color: rgb(218, 221, 212);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Active Button Styling */
+  button.active {
+    background-color: #333;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin-top: 0;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .work-experience-section,
+  .education-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  .work-experience-section:hover {
+    background-color: #ddd; }
+  
+  .work-experience-section h2,
+  .education-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .work-experience-section .job,
+  .education-section .education {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .job h3,
+  .education h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .job h4,
+  .education h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .job h5,
+  .education h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .job ul,
+  .education ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .job ul li,
+  .education ul li {
+    margin-bottom: 5px;
+  }
+  
+  .job {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .job.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .job {
+    background-color: rgb(201, 201, 195);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: black;
+    border-radius: 30px;
+  }
+  
+  .job {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .job.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Added scaling effect on hover */
+  .job:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .job {
+    transition: transform 0.3s ease;
+  }
+  
+  .job:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-box {
+    transition: transform 0.3s ease;
+  }
+  
+  .education-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .education-section {
+    background-color: rgb(234, 234, 224);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: black;
+    padding: 20px; /* Space to highlight the section */
+    background-color: #f0f0f0; /* Section background color */
+    transition: background-color 0.3s ease-in-out; /* Hover color transition */
+  }
+  
+  /* Styling for education-box */
+  .education-box {
+    background-color: rgb(201, 201, 195);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px gray;
+    margin-bottom: 20px;
+  }
+  
+  .education-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-box h3 {
+    margin-top: 0;
+  }
+  
+  .education-box h4 {
+    margin: 10px 0;
+  }
+  
+  .education-box h5 {
+    margin: 5px 0;
+  }
+  
+  .education-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .education-box li {
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar progress {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progress-bar progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  
+  .language {
+    margin-bottom: 20px;
+  }
+  
+  .language h3 {
+    color: rgb(163, 163, 157);
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .language p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .language progress {
+    width: 200px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .language progress::-webkit-progress-bar {
+    background-color: #ede6e6;
+    border-radius: 5px;
+  }
+  
+  .language progress::-webkit-progress-value {
+    background-color: rgb(42, 42, 40);
+    border-radius: 5px;
+  }
+  
+  .language {
+    width: 48%; /* Each div with class .language will take 48% of the flex container width */
+    margin-bottom: 20px; /* Added space between the two divs */
+  }
+  
+  .foreign-languages-section {
+    display: flex;
+  }
+  
+  .language {
+    flex: 1;
+    margin-right: 40px; /* Space between the two divs */
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  
+  .language:last-child {
+    margin-right: 0; /* Remove space on the last div to maintain an organized look */
+  }
+  
+  /* Footer section styling */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-section a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #777;
+  }
+  
+  /* Footer bottom section styling */
+  .footer-bottom {
+    background-color: #ddd;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Styling for FontAwesome icons */
+  .footer-section i.fa {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #f00;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: #007bff;
+  }
+  

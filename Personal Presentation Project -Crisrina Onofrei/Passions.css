@@ -1,0 +1,110 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Stilul textului global */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    zoom:120%;
+  }
+  
+  /* Stilul textului pentru link-uri */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+  
+  .logo img {
+    max-width: 150px;
+  }
+  
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  
+  .nav-link {
+    color: #333;
+    margin-right: 15px;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+ /* Add mobile-responsive styles */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      max-width: 100%;
+      height: auto;
+    }
+    .lead {
+      font-size: 16px;
+    }
+  }
+
+  
+  main {
+    padding: 30px 0;
+  }
+  
+  
+  .my-carousel-aside {
+    width: 500px;
+    min-height: 300px;
+    max-width: 500px; 
+    margin-top: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .my-carousel-aside .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+    
+
+  
+  
+  /* Passion section styles */
+  h2 {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    margin-top: 10px;
+  }
+  
+  ol {
+    margin-left: 20px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 767px) {
+    .col-lg-4 {
+      margin-top: 20px;
+    }
+  }
+  
+  
+  .lead {
+    font-size: 18px;
+  }
+
+
+
+  

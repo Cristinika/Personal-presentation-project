@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API Requests</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Rick and Morty API Requests</h1>
+
+    <div class="container">
+        <div class="card active" id="characters">
+            <h2>Characters</h2>
+            <button onclick="getCharacterData(1)">Get Single Character</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="hidden">ID</th>
+                        <th class="hidden">Name</th>
+                        <th class="hidden">Status</th>
+                        <th class="hidden">Species</th>
+                        <th class="hidden">Type</th>
+                        <th class="hidden">Gender</th>
+                        <th class="hidden">Origin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+            <button onclick="getCharactersData()">Get All Characters</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="hidden">ID</th>
+                        <th class="hidden">Name</th>
+                        <th class="hidden">Status</th>
+                        <th class="hidden">Species</th>
+                        <th class="hidden">Type</th>
+                        <th class="hidden">Gender</th>
+                        <th class="hidden">Origin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="locations">
+            <h2>Locations</h2>
+            <button onclick="getLocationData()">Get Single Location</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="hidden">ID</th>
+                        <th class="hidden">Name</th>
+                        <th class="hidden">Type</th>
+                        <th class="hidden">Dimension</th>
+                        <th class="hidden">Residents</th>
+                        <th class="hidden">URL</th>
+                        <th class="hidden">Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+            <button onclick="getLocationsData()">Get All Locations</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="hidden">ID</th>
+                        <th class="hidden">Name</th>
+                        <th class="hidden">Type</th>
+                        <th class="hidden">Dimension</th>
+                        <th class="hidden">Residents</th>
+                        <th class="hidden">URL</th>
+                        <th class="hidden">Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="episodes">
+            <h2>Episodes</h2>
+            <button onclick="getEpisodeData()">Get Single Episode</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="hidden">ID</th>
+                        <th class="hidden">Name</th>
+                        <th class="hidden">Air Date</th>
+                        <th class="hidden">Episode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+            <button onclick="getEpisodesData()">Get All Episodes</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="hidden">ID</th>
+                        <th class="hidden">Name</th>
+                        <th class="hidden">Air Date</th>
+                        <th class="hidden">Episode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

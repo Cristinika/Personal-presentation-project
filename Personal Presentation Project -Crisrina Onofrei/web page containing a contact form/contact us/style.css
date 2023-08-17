@@ -1,0 +1,184 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    width: 100%;
+    min-height:300px ;
+    margin-bottom: 30px;     
+}
+
+.box1{
+    width: 50%;
+    min-height:300px ;
+    background-color: lightgray;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.97em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 4px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+   
+
+}
+
+
+.box2{
+    width: 50%;
+    min-height:300px ;
+    background-color: lightgray;
+    float:left;
+    font-size: 30px;
+    color:gray;
+    padding:89px;
+    
+}
+
+.content{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white
+
+}
+.container{
+    background-color: white;
+    position: relative;
+    max-width: 1500px;
+    width: 100%;
+    border-radius:6px ;
+    padding:30px;
+    margin:0 15px;
+    background-color: white
+      
+}
+
+.container form{
+    width: 100%;
+    min-height:300px ;
+    margin-bottom: 50px;
+    position: relative;
+    min-height:600px ;
+    background-color: lightgray;
+
+}
+.container form .left{
+    float: left;
+    font-size: 40px;
+    width: 40%;
+    min-height:300px ;
+    
+    }
+    .right.input-field{
+        font-size: 35px;
+       
+    }
+  
+
+    .container form.fields{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+
+form .fields .input-field{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+.input-field label{
+    font-size: 35px;
+    font-weight: 300;
+    color: black
+    
+}
+.input-field input{
+    height: 65px;
+    border-radius: 5px;
+}
+
+.right button{
+    width: 30%;
+    height: 50px;
+    color:black;
+    font-size:25px ;
+    float: right;
+  margin-right: 20px;
+
+
+}
+.footer-container{ 
+     background-color:lightgray;
+     width: 100%;
+     min-height:300px ;
+     margin-bottom: 30px;
+     display: flex;
+    justify-content: center;    
+    
+}
+
+.row{
+    justify-content: space-between;
+     display: flex;
+     padding: 40px 100px;
+     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-col ul{
+   list-style:none;
+   display: flex;
+   flex-direction:column;
+  
+ 
+   
+}
+.footer-col h4{
+    color:black ;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:'';
+    width: 275px;
+    height: 2px;
+    position: absolute;
+    background-color: grey;
+    bottom:-10px;
+
+}
+
+.footer-col ul li{
+    display: inline;
+    padding: 10px 0;
+  
+  
+}
+.footer-col ul li a{
+    color:blue;
+    font-size: 16pxs;
+   
+
+}
+  
+  
